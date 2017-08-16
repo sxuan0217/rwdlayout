@@ -117,7 +117,7 @@ gulp.task('watch', function() {
     gulp.watch('./source/js/**/*.js', ['babel']);
 });
 
-gulp.task('build', gulpSequence('clean','pug','sass','babel','vendorJS'))
+gulp.task('build', gulpSequence('clean','pug','sass','babel','vendorJS','image-min'))
 /*gulp build --env production */
 /*用來交付產品 */
 
