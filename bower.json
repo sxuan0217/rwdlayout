@@ -1,0 +1,22 @@
+{
+  "name": "rwd",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "sxuan0217@gmail.com <sxuan0217@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendors/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "animate.css": "^3.5.2"
+  }
+}
