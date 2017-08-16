@@ -22,7 +22,7 @@ include ./layout.pug
           span In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
 .chefback
   .chefcontent
-    img(src="../images/main_chef_brown.png", alt="")
+    img(src="./images/main_chef_brown.png", alt="")
     .chefinfo
       h3 今日主廚：帕金森、梅在帕
         span Tody Chef: Plum in Shock
@@ -32,19 +32,19 @@ include ./layout.pug
     h3 聽聽別人的感想
     ul
       li
-        img(src="../images/avatar_1.png", alt="")
+        img(src="./images/avatar_1.png", alt="")
         .opinioncontent
           h4 高雄一口吃
           p 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
           span -- 產品經理
       li
-        img(src="../images/avatar_2.png", alt="")
+        img(src="./images/avatar_2.png", alt="")
         .opinioncontent
           h4 廟口小霸王
           p 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
           span -- 金身道士
       li
-        img(src="../images/avatar_3.png", alt="")
+        img(src="./images/avatar_3.png", alt="")
         .opinioncontent
           h4  春天也來了
           p 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
@@ -55,7 +55,7 @@ include ./layout.pug
       span  要不要先訂位呢
     .position
       .mapimg
-        img(src="../images/Map.png", alt="")
+        img(src="./images/Map.png", alt="")
       form.bookform.p-form
         label(for='name_') 姓名
         input#name_(type='text', name='name_', placeholder='六角講師吃尾牙')
@@ -75,5 +75,5 @@ include ./layout.pug
           button.btn.orange 送出
 block layout
 include ./partials/footer.pug
-script(src='../js/vendors.js')
-script(src='../js/all.js')
+script(src='./js/vendors.js')
+script(src='./js/all.js')
