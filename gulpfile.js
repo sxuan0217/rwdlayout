@@ -39,7 +39,7 @@ gulp.task('pug', function() {
             //locals: YOUR_LOCALS
             pretty: true
         }))
-        .pipe(gulp.dest('./public/'))
+        .pipe(gulp.dest('./public/'))//目標路徑
         .pipe(browserSync.stream()); //編譯完後自動更新
 });
 
@@ -64,7 +64,7 @@ gulp.task('babel', () => { //編譯ES6語法
     return gulp.src('./source/js/**/*.js') //來源:source的js資料夾底下的所有js檔案
         .pipe($.sourcemaps.init()) //撰寫js位置
         .pipe($.babel({
-            presets: ['es2015']
+            presets: ['es2015']//ES6
         }))
         .pipe($.concat('all.js')) //組合成同一支CSS
         .pipe($.if(options.env ==='production',$.uglify({/*如果參數為production就執行壓縮 */
@@ -112,9 +112,9 @@ gulp.task('image-min', () =>/*圖片壓縮 */
 
 
 gulp.task('watch', function() {
-    gulp.watch('./source/scss/**/*.sass', ['sass']);
-    gulp.watch('./source/**/*.pug', ['pug']);
-    gulp.watch('./source/js/**/*.js', ['babel']);
+    gulp.watch('./source/scss/**/*.sass', ['sass']);//監控檔案
+    gulp.watch('./source/**/*.pug', ['pug']);//監控檔案
+    gulp.watch('./source/js/**/*.js', ['babel']);//監控檔案
 });
 
 gulp.task('build', gulpSequence('clean','pug','sass','babel','vendorJS','image-min'))
